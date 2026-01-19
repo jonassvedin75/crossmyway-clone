@@ -1,0 +1,6 @@
+{
+  "rewrites": [
+    { "source": "/", "destination": "/crossmyway.se/index.html" },
+    { "source": "/(.*)", "destination": "/$1" }
+  ]
+}
