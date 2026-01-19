@@ -1,6 +1,16 @@
 {
+  "cleanUrls": true,
   "rewrites": [
     { "source": "/", "destination": "/crossmyway.se/index.html" },
-    { "source": "/(.*)", "destination": "/$1" }
+    
+    { "source": "/vendor/(.*)", "destination": "/crossmyway.se/vendor/$1" },
+    { "source": "/storage/(.*)", "destination": "/crossmyway.se/storage/$1" },
+    { "source": "/manifest.webmanifest.html", "destination": "/crossmyway.se/manifest.webmanifest.html" },
+    
+    { "source": "/media.moln8.se/(.*)", "destination": "/media.moln8.se/$1" },
+    { "source": "/cdn.moln8.se/(.*)", "destination": "/media.moln8.se/$1" },
+
+    { "source": "/(.*)\\.html", "destination": "/crossmyway.se/$1.html" },
+    { "source": "/(.*)", "destination": "/crossmyway.se/$1" }
   ]
 }
